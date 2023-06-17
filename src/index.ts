@@ -1,23 +1,23 @@
-class Sorter {
-  collection: number[]
-  constructor(collection: number[]) {
-    this.collection = collection
-  }
-  sort() {
-    for (let i = 0; i < this.collection.length; i++) {
-      for (let j = 0; j < this.collection.length - i - 1; j++) {
-        //LOGIC FOR NUMBERS
-        if (this.collection[j] > this.collection[j + 1]) {
-          const tmp = this.collection[j]
-          this.collection[j] = this.collection[j + 1]
-          this.collection[j + 1] = tmp
-        }
-        //todo LOGIC FOR STRINGS
-        // todo LOGIC FOR LINED LIST
-      }
-    }
-  }
-}
-const sorter = new Sorter([10, -10, 4, 3, -20])
-sorter.sort()
-console.log(sorter.collection)
+import Sorter from './Sorter'
+import NumberCollection from './NumberCollection'
+import CharacterCollection from './CharacterCollection'
+import LinkedList from './LinkedList'
+
+const numberCollection = new NumberCollection([-5, 10, -10, 2])
+const numSorter = new Sorter(numberCollection)
+numSorter.sort()
+console.log(numberCollection.data)
+
+const characterCollection = new CharacterCollection('Testing')
+const charSorter = new Sorter(characterCollection)
+charSorter.sort()
+console.log(characterCollection.data)
+
+const linkedList = new LinkedList()
+linkedList.add(100)
+linkedList.add(50)
+linkedList.add(-300)
+linkedList.add(5100)
+const linkListSorter = new Sorter(linkedList)
+linkListSorter.sort()
+console.log(linkedList.print())

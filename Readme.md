@@ -33,3 +33,8 @@ Specifying tsc config for build by changing tsCongif.json ( set up using tsc --i
 
 Sorter needs to have type guards and change sort fn according to that
 Issue - Hard for any dev to write sorting algo differently for diff data structures.
+
+##### V2
+
+One sort with comapare and swap fn where implementation of these fn is different based on structure
+Benefit - It is easier of dev to write compare and swap fn for a data structure rather than the whole sorting algo.
