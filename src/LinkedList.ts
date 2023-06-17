@@ -1,3 +1,5 @@
+import Sorter from './Sorter'
+
 class Node {
   next: Node | null
   data: number
@@ -7,11 +9,12 @@ class Node {
   }
 }
 
-export default class LinkedList {
+export default class LinkedList extends Sorter {
   head: Node | null
   tail: Node | null
   length: number
   constructor() {
+    super()
     this.head = null
     this.tail = null
     this.length = 0

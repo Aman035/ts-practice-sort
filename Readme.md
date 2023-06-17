@@ -38,3 +38,8 @@ Issue - Hard for any dev to write sorting algo differently for diff data structu
 
 One sort with comapare and swap fn where implementation of these fn is different based on structure
 Benefit - It is easier of dev to write compare and swap fn for a data structure rather than the whole sorting algo.
+
+##### V3
+
+Since sorter in itself does not have any use - it can be used with any of the class supporting ICollection.
+So it makes sense to have sorter as an **Abstract Class** stating that it cannot be declared directly but has to be used with child classes only.

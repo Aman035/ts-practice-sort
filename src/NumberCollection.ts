@@ -1,7 +1,11 @@
-export default class NumberCollection {
+import Sorter from './Sorter'
+
+export default class NumberCollection extends Sorter {
   data: number[]
   length: number
   constructor(data: number[]) {
+    // Mandatory when using a parent class
+    super()
     this.data = data
     this.length = data.length
   }
