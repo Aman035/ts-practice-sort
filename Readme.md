@@ -4,7 +4,7 @@
 
 To Sort a numbers array or string or Linked list using Buble Sort
 
-#### How To Run
+#### Steps To Run
 
 ##### 1. Install Dependencies
 
@@ -29,6 +29,7 @@ Using Nodemon for development server to monitoring changes and refreshing
 Standard Script commands defined in package.json
 Specifying tsc config for build by changing tsCongif.json ( set up using tsc --init )
 
-##### V1 ISSUES
+##### V1
 
 Sorter needs to have type guards and change sort fn according to that
+Issue - Hard for any dev to write sorting algo differently for diff data structures.
